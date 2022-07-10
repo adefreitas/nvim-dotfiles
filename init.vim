@@ -92,7 +92,7 @@ call plug#begin('~/.vim/plugged')
 	" tree view
 	Plug 'kyazdani42/nvim-tree.lua'
 	" color theme
-	Plug 'ntk148v/vim-horizon'
+	Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 call plug#end()
 
 " Copy + pasting bindings CTRL + C and CTRL + V
@@ -124,4 +124,4 @@ nnoremap <C-b> :NvimTreeToggle<cr>
 
 set termguicolors
 set background=dark
-colorscheme horizon
+colorscheme challenger_deep
