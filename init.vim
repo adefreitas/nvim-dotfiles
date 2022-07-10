@@ -91,16 +91,10 @@ call plug#begin('~/.vim/plugged')
 	Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 	" tree view
 	Plug 'kyazdani42/nvim-tree.lua'
-	" color themes
-	Plug 'olimorris/onedarkpro.nvim' " https://github.com/olimorris/onedarkpro.nvim
-	Plug 'romgrk/doom-one.vim' " https://github.com/romgrk/doom-one.vim
-	Plug 'bluz71/vim-moonfly-colors' " https://github.com/bluz71/vim-moonfly-colors
-	Plug 'bluz71/vim-nightfly-guicolors' " https://github.com/bluz71/vim-nightfly-guicolors
-	Plug 'ghifarit53/tokyonight-vim'
+	" color theme
 	Plug 'ntk148v/vim-horizon'
 call plug#end()
 
-set background=dark
 " Copy + pasting bindings CTRL + C and CTRL + V
 vnoremap <C-c> "+y
 map <C-v> "+p
@@ -128,13 +122,6 @@ nnoremap <silent>b] :BufferLineCyclePrev<CR>
 
 nnoremap <C-b> :NvimTreeToggle<cr>
 
-" let g:lightline = { 'colorscheme': 'moonfly' }
-" require('lualine').setup({options = {theme = 'moonfly'}})
-
 set termguicolors
-
-let g:tokyonight_style = 'storm' " available: night, storm
-let g:tokyonight_enable_italic = 1
-
+set background=dark
 colorscheme horizon
-
