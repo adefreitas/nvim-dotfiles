@@ -1,0 +1,8 @@
+require('ordo/telescope')
+require('ordo/lualine')
+require('ordo/gitsigns')
+require('ordo/lsp')
+require('ordo/treesitter')
+require('ordo/nvim-comment')
+require('ordo/bufferline')
+require("ordo/nvim-tree")
