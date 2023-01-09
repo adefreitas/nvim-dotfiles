@@ -19,9 +19,8 @@ vim.opt.scrolloff = 10
 vim.opt.signcolumn = "yes"
 
 vim.cmd("colorscheme oxocarbon")
-require("nvim-autopairs").set_buf_rule
-
+require("nvim-autopairs").setup()
 
 vim.cmd("highlight Normal guibg=NONE")
 vim.cmd("highlight NonText guibg=NONE")
-vim.cmd("highlight SignColumn guibg=NONE") 
+vim.cmd("highlight SignColumn guibg=NONE")
