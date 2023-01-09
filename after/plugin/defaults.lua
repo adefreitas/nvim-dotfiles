@@ -7,7 +7,6 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.smartindent = true
-
 vim.opt.swapfile = false;
 vim.opt.backup = false;
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
@@ -24,3 +23,5 @@ require("nvim-autopairs").setup()
 vim.cmd("highlight Normal guibg=NONE")
 vim.cmd("highlight NonText guibg=NONE")
 vim.cmd("highlight SignColumn guibg=NONE")
+
+vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
