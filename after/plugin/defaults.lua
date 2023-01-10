@@ -24,4 +24,3 @@ vim.cmd("highlight Normal guibg=NONE")
 vim.cmd("highlight NonText guibg=NONE")
 vim.cmd("highlight SignColumn guibg=NONE")
 
-vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
