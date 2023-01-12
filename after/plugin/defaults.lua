@@ -17,12 +17,12 @@ vim.opt.incsearch = true
 vim.opt.scrolloff = 10
 vim.opt.signcolumn = "yes"
 
-vim.cmd("colorscheme oxocarbon")
+vim.cmd("colorscheme carbonfox")
 require("nvim-autopairs").setup()
 require('lualine').setup {
     options = {
       icons_enabled = false,
-      theme = 'oxocarbon',
+      theme = 'carbonfox',
       component_separators = '|',
       section_separators = '',
     },
