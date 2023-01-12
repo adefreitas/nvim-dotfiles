@@ -33,4 +33,12 @@ vim.cmd("highlight Normal guibg=NONE")
 vim.cmd("highlight NonText guibg=NONE")
 vim.cmd("highlight SignColumn guibg=NONE")
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
-vim.api.nvim_set_keymap("n", "<C-b>", ":NERDTreeFind<cr>", { noremap = true, silent = true })
+
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- set termguicolors to enable highlight groups
+vim.opt.termguicolors = true
+
+-- empty setup using defaults
+require("nvim-tree").setup()
