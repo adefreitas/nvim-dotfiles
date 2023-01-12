@@ -20,19 +20,17 @@ vim.opt.signcolumn = "yes"
 vim.cmd("colorscheme carbonfox")
 require("nvim-autopairs").setup()
 require('lualine').setup {
-    options = {
-      icons_enabled = false,
-      theme = 'carbonfox',
-      component_separators = '|',
-      section_separators = '',
-    },
-  }
-
+  options = {
+    icons_enabled = false,
+    theme = 'carbonfox',
+    component_separators = '|',
+    section_separators = '',
+  },
+}
 
 vim.cmd("highlight Normal guibg=NONE")
 vim.cmd("highlight NonText guibg=NONE")
 vim.cmd("highlight SignColumn guibg=NONE")
-vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1

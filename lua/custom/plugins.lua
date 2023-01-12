@@ -7,5 +7,14 @@ return function(use)
     'nvim-tree/nvim-web-devicons', -- optional, for file icons
   }, }
   use { "EdenEast/nightfox.nvim" }
-  vim.api.nvim_set_keymap("n", "<C-b>", ":NvimTreeFindFileToggle<cr>", { noremap = true, silent = true }) --[[   ft = { 'javascript', 'typescript', 'css', 'less', 'scss', 'graphql', 'markdown', 'vue', 'html' } ]]
+  use {
+    "folke/zen-mode.nvim",
+    config = function()
+      require("zen-mode").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
+  }
 end
