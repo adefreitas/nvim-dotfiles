@@ -17,4 +17,6 @@ return function(use)
       }
     end
   }
+  use { "thedenisnikulin/vim-cyberpunk" }
+  use { "akai54/2077.nvim" }
 end
