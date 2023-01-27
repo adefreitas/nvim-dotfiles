@@ -19,7 +19,7 @@ vim.opt.signcolumn = "yes"
 
 
 -- colortheme was carbonfox before
-vim.cmd("colorscheme silverhand")
+vim.cmd("colorscheme tokyonight-night")
 
 require("nvim-autopairs").setup()
 require('lualine').setup {
@@ -31,10 +31,10 @@ require('lualine').setup {
   },
 }
 
-vim.cmd("highlight Normal guibg=NONE")
-vim.cmd("highlight NonText guibg=NONE")
-vim.cmd("highlight SignColumn guibg=NONE")
-
+-- vim.cmd("highlight Normal guibg=NONE")
+-- vim.cmd("highlight NonText guibg=NONE")
+-- vim.cmd("highlight SignColumn guibg=NONE")
+--
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 

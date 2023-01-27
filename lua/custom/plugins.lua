@@ -19,4 +19,5 @@ return function(use)
   }
   use { "thedenisnikulin/vim-cyberpunk" }
   use { "akai54/2077.nvim" }
+  use { 'folke/tokyonight.nvim' }
 end
