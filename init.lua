@@ -155,6 +155,7 @@
   -- See `:help lualine.txt`
   require('lualine').setup {
     options = {
+      show_file_name_only = false,
       icons_enabled = false,
       theme = 'onedark',
       component_separators = '|',
