@@ -20,5 +20,6 @@ return function(use)
   use { "thedenisnikulin/vim-cyberpunk" }
   use { "akai54/2077.nvim" }
   use { 'folke/tokyonight.nvim' }
-  use { 'github/copilot.vim', config = function() require("copilot").setup { lazy = false} end }
+  use { 'github/copilot.vim' }
+  use { 'ggandor/leap.nvim' }
 end
