@@ -120,7 +120,7 @@
 
   -- Set colorscheme
   vim.o.termguicolors = true
-  vim.cmd [[colorscheme tokyonight-storm]]
+  vim.cmd [[colorscheme onedark]]
 
   -- Set completeopt to have a better completion experience
   vim.o.completeopt = 'menuone,noselect'
@@ -157,7 +157,7 @@
     options = {
       show_file_name_only = false,
       icons_enabled = false,
-      theme = 'tokyonight-storm',
+      theme = 'onedark',
       component_separators = '|',
       section_separators = '',
     },
