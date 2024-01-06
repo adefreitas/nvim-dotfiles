@@ -19,7 +19,7 @@ vim.opt.signcolumn = "yes"
 
 
 -- colortheme was carbonfox before
-vim.cmd("colorscheme onedark")
+vim.cmd("colorscheme tokyonight-storm")
 require('leap').add_default_mappings()
 require("nvim-autopairs").setup()
 require('lualine').setup {
